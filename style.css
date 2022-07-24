@@ -7,24 +7,24 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #191414;
-    color: #fff;
+    color: #eeeeee;
 }
 
 /* Perfil */
 
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 150px;
+    height: 250px;
+    background: linear-gradient(360deg, rgba(25,20,20,1) 0%, rgba(48,48,48,1) 100%);
 }
 
 .perfil {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .imagem_perfil {
@@ -33,6 +33,7 @@ header {
     border-radius: 50%;
     margin-top: 25px;
     margin-right: 20px;
+    margin-bottom: 5px;
 
 }
 
@@ -41,10 +42,38 @@ header {
     line-height: 100px;
 }
 
+/* botões */
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.botao {
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px 5px;
+    background-color: #fff;
+    color: #000;
+    transition: all 300ms linear;
+}
+
+.botao:hover {
+    background-color: #000;
+    color: #1DB954;
+    transition: all 300ms linear;
+}
+
 /* Playlist */
 
 main {
-    margin-top: 3%;
+    margin-top: 8%;
 }
 
 .playlist {
@@ -69,16 +98,17 @@ a:hover {
 
 .playlist_title {
     text-align: center;
-    font-size: 24px;
-    padding: 5px;
-    margin-top: 78%;
-    width: 90%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 70%;
+    width: 60%;
     background-color: rgba(255, 255, 255, 0.925);
     transition: all 400ms linear;
 }
 
 .playlist_title:hover{
     background-color: #000;
+    width: 90%;
     transition: all 400ms linear;
 }
 
@@ -87,8 +117,8 @@ a:hover {
     width: 300px;
     height: 300px;
     border-radius: 10%;
-    margin: 10px;
-}
+    margin: 10px 5px;
+} 
 
 #playlistOne {
     background-image: url(imagens/pop.jpg);
@@ -160,38 +190,4 @@ section {
     .panel:nth-of-type(5) {
         display: none;
     }
-}
-
-/* footer */
-
-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 15vh;
-}
-
-footer h3 {
-    display: inline-block;
-}
-
-.botao {
-    width: 180px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    background-color: #fff;
-    color: #000;
-    transition: all 300ms linear;
-}
-
-.botao:hover {
-    background-color: #000;
-    color: #1DB954;
-    transition: all 300ms linear;
-}
-
-i {
-    margin: 0px 10px 0px 0px;
 }

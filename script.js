@@ -59,10 +59,10 @@ function mudarTextoTerceira() {
 }
 
 function reverterTexto() {
-    primeira.innerHTML = "Pop - Singles e faixas"
+    primeira.innerHTML = "Pop"
     primeira.style.transition = 'all 600ms linear'
 
-    segunda.innerHTML = "10's"
+    segunda.innerHTML = "Anos 10's"
     segunda.style.transition = 'all 600ms linear'
 
     terceira.innerHTML = "Trending"
