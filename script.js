@@ -1,77 +1,92 @@
-// ir para playlist
+// animando playlists 
 
-let primeira = document.getElementById('primeira')
-primeira.addEventListener("mouseover", mudarTextoPrimeira)
-primeira.addEventListener("mouseout", reverterTexto)
+const target = document.querySelectorAll('[data-anime]')
+const animationClass = 'animate'
 
+function animeScroll() {
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75)
+    target.forEach(function(element){
 
-let segunda = document.getElementById('segunda')
-segunda.addEventListener("mouseover", mudarTextoSegunda)
-segunda.addEventListener("mouseout", reverterTexto)
+        if((windowTop) > element.offsetTop){
+            element.classList.add(animationClass)
+        } else {
+            element.classList.remove(animationClass)
+        }
 
-let terceira = document.getElementById('terceira')
-terceira.addEventListener("mouseover", mudarTextoTerceira)
-terceira.addEventListener("mouseout", reverterTexto)
+    })
+}
 
-function mudarTextoPrimeira() {
+animeScroll()
 
-    let play = "Ir para playlist"
+if(target.length) {
 
-    primeira.innerHTML = `${play}`
-    primeira.style.transition = 'all 300ms linear'
+    window.addEventListener('scroll', function() {
+        animeScroll()
+    })
 
 }
 
-function mudarTextoSegunda() {
+// colorir albuns 
 
-    let play = "Ir para playlist"
+let primeiroAlbum = document.getElementById('album1')
 
-    segunda.innerHTML = `${play}`
-    segunda.style.transition = 'all 300ms linear'
+primeiroAlbum.addEventListener("mouseover", mudarCorPrimeiroAlbum)
+primeiroAlbum.addEventListener("mouseout", retornarCorPrimeiroAlbum)
+
+function mudarCorPrimeiroAlbum() {
+
+   primeiroAlbum.style.filter = 'grayscale(0)'
+   primeiroAlbum.style.transition = 'all 300ms ease-in'
 
 }
 
-function mudarTextoTerceira() {
+function retornarCorPrimeiroAlbum() {
 
-    let play = "Ir para playlist"
+    primeiroAlbum.style.filter = 'grayscale(100%)'
+    primeiroAlbum.style.transition = 'all 300ms ease-in'
 
-    terceira.innerHTML = `${play}`
-    terceira.style.transition = 'all 300ms linear'
 }
 
-function reverterTexto() {
-    primeira.innerHTML = "Pop"
-    primeira.style.transition = 'all 300ms linear'
+// segundo
 
-    segunda.innerHTML = "into a past"
-    segunda.style.transition = 'all 300ms linear'
+let segundoAlbum = document.getElementById('album2')
 
-    terceira.innerHTML = "Trending"
-    terceira.style.transition = 'all 300ms linear'
+segundoAlbum.addEventListener("mouseover", mudarCorsegundoAlbum)
+segundoAlbum.addEventListener("mouseout", retornarCorsegundoAlbum)
+
+function mudarCorsegundoAlbum() {
+
+   segundoAlbum.style.filter = 'grayscale(0)'
+   segundoAlbum.style.transition = 'all 300ms ease-in'
+
 }
 
-// Albuns
+function retornarCorsegundoAlbum() {
 
-let album = document.getElementById("album")
+    segundoAlbum.style.filter = 'grayscale(100%)'
+    segundoAlbum.style.transition = 'all 300ms ease-in'
 
-let album1 = document.getElementById("album1")
-album1.addEventListener("click", () => {
-    album.src = 'https://upload.wikimedia.org/wikipedia/pt/3/3a/Madison_Beer_-_Life_Support.png'
-    album.style.transition = 'all 200ms ease'
-})
+}
 
-let album2 = document.getElementById("album2")
-album2.addEventListener("click", () => {
-    album.src = 'https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36'
-    album.style.transition = 'all 200ms ease'
-})
+// terceiro
 
-let album3 = document.getElementById("album3").addEventListener("click", () => {
-    album.src = 'https://upload.wikimedia.org/wikipedia/pt/1/16/Planet_Her_-_Doja_Cat.png'
-    album.style.transition = 'all 600ms ease'
-})
+let terceiroAlbum = document.getElementById('album3')
 
-let album4 = document.getElementById("album4").addEventListener("click", () => {
-    album.src = 'https://tracklist.com.br/wp-content/uploads/2022/03/FNbnntgUYAAd5LG.jpg'
-    album.style.transition = 'all 200ms ease'
-})
+terceiroAlbum.addEventListener("mouseover", mudarCorterceiroAlbum)
+terceiroAlbum.addEventListener("mouseout", retornarCorterceiroAlbum)
+
+function mudarCorterceiroAlbum() {
+
+   terceiroAlbum.style.filter = 'grayscale(0)'
+   terceiroAlbum.style.transition = 'all 300ms ease-in'
+
+}
+
+function retornarCorterceiroAlbum() {
+
+    terceiroAlbum.style.filter = 'grayscale(100%)'
+    terceiroAlbum.style.transition = 'all 300ms ease-in'
+
+}
+
+
