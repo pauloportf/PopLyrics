@@ -89,4 +89,22 @@ function retornarCorterceiroAlbum() {
 
 }
 
+// mudar texto playlist 
 
+ /* let texto1 = document.getElementById("textPlay1")
+
+texto1.addEventListener("mouseenter", () => {
+    texto1.innerHTML = 'Visitar playlist'
+})
+
+let texto2 = document.getElementById("textPlay2")
+
+texto2.addEventListener("mouseover", () => {
+    texto2.innerHTML = 'Visitar playlist'
+})
+
+let texto3 = document.getElementById("textPlay3")
+
+texto3.addEventListener("mouseover", () => {
+    texto3.innerHTML = 'Visitar playlist'
+}) */
