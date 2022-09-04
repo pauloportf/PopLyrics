@@ -91,20 +91,38 @@ function retornarCorterceiroAlbum() {
 
 // mudar texto playlist 
 
- /* let texto1 = document.getElementById("textPlay1")
+let texto1 = document.getElementById("playText1")
 
 texto1.addEventListener("mouseenter", () => {
-    texto1.innerHTML = 'Visitar playlist'
+    texto1.innerText = 'Visitar playlist'
+    texto1.style.backgroundColor = '#f6f6f6'
 })
 
-let texto2 = document.getElementById("textPlay2")
+texto1.addEventListener("mouseout", () => {
+    texto1.innerText = 'Pop'
+    texto1.style.backgroundColor = '#000'
+})
+
+let texto2 = document.getElementById("playText2")
 
 texto2.addEventListener("mouseover", () => {
     texto2.innerHTML = 'Visitar playlist'
+    texto2.style.backgroundColor = '#f6f6f6'
 })
 
-let texto3 = document.getElementById("textPlay3")
+texto2.addEventListener("mouseout", () => {
+    texto2.innerText = 'Trending'
+    texto2.style.backgroundColor = '#000'
+})
+
+let texto3 = document.getElementById("playText3")
 
 texto3.addEventListener("mouseover", () => {
     texto3.innerHTML = 'Visitar playlist'
-}) */
+    texto3.style.backgroundColor = '#f6f6f6'
+})
+
+texto3.addEventListener("mouseout", () => {
+    texto3.innerText = 'Nostalgia'
+    texto3.style.backgroundColor = '#000'
+})
