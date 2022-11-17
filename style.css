@@ -18,7 +18,6 @@ mark {
 }
 
 /* menu */
-
 nav {
     display: flex;
     flex-direction: row;
@@ -63,7 +62,6 @@ li a:hover {
 }
 
 /* Termino do menu */
-
 .manter {
     display: flex;
     flex-direction: row;
@@ -104,7 +102,6 @@ li a:hover {
 }
 
 /* Playlist */
-
 main, section {
     display: flex;
     flex-direction: column;
@@ -178,7 +175,6 @@ main h2, section h2 {
 }
 
 /* animando playlists */
-
 [data-anime] {
     opacity: 0;
     transition: 300ms;
@@ -198,7 +194,6 @@ main h2, section h2 {
 }
 
 /* Responsividade */
-
 @media screen and (max-width: 360px) {
     .impact h2 {
         font-size: 3rem;

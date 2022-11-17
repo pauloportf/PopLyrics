@@ -1,4 +1,4 @@
-// animando playlists 
+// animando itens
 
 const target = document.querySelectorAll('[data-anime]')
 const animationClass = 'animate'
@@ -12,16 +12,13 @@ function animeScroll() {
         } else {
             element.classList.remove(animationClass)
         }
-
     })
 }
 
 animeScroll()
 
 if(target.length) {
-
     window.addEventListener('scroll', function() {
         animeScroll()
     })
-
 }
