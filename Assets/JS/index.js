@@ -7,10 +7,10 @@ const imageCarousel = [
     "../Images/myohmy.gif"
 ]
 
-let index = 0
+let i = 0
 
 function changeBackground () {
-    index = (index + 1) % imageCarousel.length
+    i = (i + 1) % imageCarousel.length
     imageMain.style.backgroundImage = `url(${imageCarousel[i]})`
 }
 
