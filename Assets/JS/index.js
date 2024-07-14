@@ -1,17 +1,13 @@
-const imageMain = document.getElementById("image-main")
+function toggleMute() {
+    var video = document.getElementById("myVideo");
+    var muteButton = document.getElementById("muteButton");
 
-const imageCarousel = [
-    "../Images/bunny.gif",
-    "../Images/trainingseason.gif",
-    "../Images/ed.gif",
-    "../Images/myohmy.gif"
-]
-
-let i = 0
-
-function changeBackground () {
-    i = (i + 1) % imageCarousel.length
-    imageMain.style.backgroundImage = `url(${imageCarousel[i]})`
+    if (video.muted) {
+        video.muted = false;
+        muteButton.src = "./Assets/Images/musicon.png"; // Altere para o ícone de desmutado
+        muteButton.style.transition = "0.5s ease";
+    } else {
+        video.muted = true;
+        muteButton.src = "./Assets/Images/musicoff.png"; // Altere para o ícone de mutado
+    }
 }
-
-setInterval(changeBackground, 5000)
