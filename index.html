@@ -1,135 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="./Assets/Images/equalize.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./Assets/Images/equalize.png"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
 
     <!-- Fonte do projeto: Saira -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Playlists</title>
-
-</head>
-<body>
-    <nav>
-        <img src="./Assets/Images/equalize.png" width="30" alt="">
-    </nav>
-
+  </head>
+  <body>
     <!-- Tela de ínicio -->
     <main>
-        <video autoplay muted loop id="myVideo">
-            <source src="./Assets/Videos/espresso.mkv" type="video/mp4">
-        </video>
+      <nav>
+        <img src="./Assets/Images/equalize.png" width="30" alt="" />
+      </nav>
+      <video autoplay muted loop id="myVideo">
+        <source src="./Assets/Videos/birdsofafeather.mkv" type="video/mp4" />
+      </video>
 
-        <div class="text-main">
-            <h1>Playlists</h1>
-            <p>All my playlists in one website</p>
-            <div class="links">
-                <a href="https://open.spotify.com/user/4gvin36hbuyictiwzrvnis9b1?si=aba81ffe87bd4620" width="30" class="spotify" target="_blank"><img src="./Assets/Images/spotify-30.png" alt=""></a>
-                <a href="https://github.com/iampaylin" class="github" target="_blank"><img src="./Assets/Images/github-30.png" width="30" alt=""></a>
-            </div>
-            <div class="songday">
-                <!--<img src="https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5" class="coversongday" alt=""> -->
-                <p>Espresso <br> Sabrina Carpenter</p>
-                <img src="./Assets/Images/musicoff.png" alt="" id="muteButton" onclick="toggleMute()" width="30">
-            </div>
+      <div class="text-main">
+        <h1>Playlists</h1>
+        <p>My spotify page, follow me on Github :)</p>
+        <div class="links">
+          <a href="https://github.com/iampaylin" class="github" target="_blank"
+            ><img src="./Assets/Images/github-30.png" width="30" alt=""
+          /></a>
         </div>
-        <div class="image-main" id="image-main">
-            <div class="gradient"></div>
+        <div class="songday">
+          <!--<img src="https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5" class="coversongday" alt=""> -->
+          <p>
+            Birds Of A Feather <br />
+            Billie Eilish
+          </p>
+          <img
+            src="./Assets/Images/musicoff.png"
+            alt=""
+            id="muteButton"
+            onclick="toggleMute()"
+            width="30"
+          />
         </div>
+      </div>
+      <div class="image-main" id="image-main">
+        <div class="gradient"></div>
+      </div>
+
+      <a href="SUA_URL_SPOTIFY" class="spotify-link" target="_blank">
+        <img src="./Assets/Images/spotify-30.png" alt="Spotify" />
+      </a>
     </main>
-
-    
-
+    <!-- 
     <section class="playlists">
-        
+      <a
+        href="https://open.spotify.com/playlist/1TuISr8AFSmAgQPz4a9k89?si=efa8b7cc73594424"
+        target="_blank"
+        class="playlist pop"
+      >
+        <div class="cover">
+          <p>POP</p>
+        </div>
+      </a>
 
-        <a href="https://open.spotify.com/playlist/1TuISr8AFSmAgQPz4a9k89?si=efa8b7cc73594424" target="_blank" class="playlist pop">
-            <div class="cover">
-                <p>POP</p>
-            </div>
-        </a>
+      <a
+        href="https://open.spotify.com/playlist/3fbZEySpEL2tjEvc2sbEIm?si=638d2e7d37d6476c"
+        target="_blank"
+        class="playlist nostalgia"
+      >
+        <div class="cover">
+          <p>
+            Nostalgia <br />
+            1980 - 2010
+          </p>
+        </div>
+      </a>
 
-        <a href="https://open.spotify.com/playlist/3fbZEySpEL2tjEvc2sbEIm?si=638d2e7d37d6476c" target="_blank" class="playlist nostalgia">
-            <div class="cover">
-                <p>Nostalgia <br> 1980 - 2010</p>
-            </div>
-        </a>
-
-        <a href="https://open.spotify.com/playlist/3zuB9LmdNVzLzCPsoGSxiA?si=0799f6a24f5d42a7" target="_blank" class="playlist showtime">
-            <div class="cover">
-                <p>Showtime</p>
-            </div>
-        </a>
-
-        <a href="https://open.spotify.com/playlist/2NbBnncOAPYfIxhnmxBopH?si=bde3d69a07b247a1" target="_blank" class="playlist kpop">
-            <div class="cover">
-                <p>Korean POP</p>
-            </div>
-        </a>
+      <a
+        href="https://open.spotify.com/playlist/3zuB9LmdNVzLzCPsoGSxiA?si=0799f6a24f5d42a7"
+        target="_blank"
+        class="playlist showtime"
+      >
+        <div class="cover">
+          <p>Showtime</p>
+        </div>
+      </a>
     </section>
-
-    <section class="playlists">
-        <a href="https://open.spotify.com/playlist/5wYiGzVL4XTXMLCYxAxq1T?si=d6ba16531c2040ea" target="_blank" class="playlist easeful">
-            <div class="cover">
-                <p>Easeful</p>
-            </div>
-        </a>
-        <a href="https://open.spotify.com/playlist/0SJF2Yob7fXd71REvKGdCd?si=4ce6472ae2cf44aa" target="_blank" class="playlist animae">
-            <div class="cover">
-                <p>Animae</p>
-            </div>
-        </a>
-        <a href="https://open.spotify.com/playlist/2zQeOFqsyca7RAIoecfo35?si=c5beb652530e45e2" target="_blank" class="playlist br">
-            <div class="cover">
-                <p>BR</p>
-            </div>
-        </a>
-
-        <a href="https://open.spotify.com/playlist/5R1b1bdueNIq9UC28BP6yn?si=e9a8afa51cce484b" target="_blank"  class="playlist eletro">
-            <div class="cover">
-                <p>Eletro</p>
-            </div>
-        </a>
-
-        <a href="https://open.spotify.com/playlist/5TiCF6L47nQe3XKhXjpiol?si=f67c0b0753434dc2" target="_blank" class="playlist opopepop">
-            <div class="cover">
-                <p>O POP É POP</p>
-            </div>
-        </a>
-    </section>
-
-    <section class="playlists">
-        <a href="https://open.spotify.com/playlist/4VIPmLyNmphOnvbSJgMWkT?si=184294a6bf0444d1" target="_blank" class="playlist luv">
-            <div class="cover">
-                <p>💞</p>
-            </div>
-        </a>
-        
-        <a href="https://open.spotify.com/playlist/1P67OCE7rc9AeziElqCk66?si=80f8fb01e58e46b4" target="_blank"  class="playlist spedup">
-            <div class="cover">
-                <p>Sped Up</p>
-            </div>
-        </a>
-
-        <a href="https://open.spotify.com/playlist/21OWj5x8xJ8EvlSxZTU757?si=57568bb48673420e" target="_blank" class="playlist latino">
-            <div class="cover">
-                <p>Latino</p>
-            </div>
-        </a>
-
-        <a href="https://open.spotify.com/playlist/0WelcC2Od93fKIxVC2ahDG?si=62697bb8a1014151" target="_blank" class="playlist funk">
-            <div class="cover">
-                <p>Funk</p>
-            </div>
-        </a>
-    </section>
+    -->
     <script src="./Assets/JS/index.js"></script>
-</body>
+  </body>
 </html>
