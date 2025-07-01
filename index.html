@@ -1,108 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="shortcut icon"
-      href="./Assets/Images/equalize.png"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+  <link rel="shortcut icon" href="./Assets/Images/equalize.png" type="image/x-icon" />
 
-    <!-- Fonte do projeto: Saira -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="./Assets/CSS/style.css" />
 
-    <title>Playlists</title>
-  </head>
-  <body>
-    <!-- Tela de ínicio -->
-    <main>
-      <nav>
-        <img src="./Assets/Images/equalize.png" width="30" alt="" />
-      </nav>
-      <video autoplay muted loop id="myVideo">
-        <source src="./Assets/Videos/birdsofafeather.mkv" type="video/mp4" />
-      </video>
+  <!-- Fonte do projeto: Saira -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-      <div class="text-main">
-        <h1>Playlists</h1>
-        <p>My spotify page, follow me on Github :)</p>
-        <div class="links">
-          <a href="https://github.com/iampaylin" class="github" target="_blank"
-            ><img src="./Assets/Images/github-30.png" width="30" alt=""
-          /></a>
-        </div>
-        <div class="songday">
-          <!--<img src="https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5" class="coversongday" alt=""> -->
-          <p>
-            Birds Of A Feather <br />
-            Billie Eilish
-          </p>
-          <img
-            src="./Assets/Images/musicoff.png"
-            alt=""
-            id="muteButton"
-            onclick="toggleMute()"
-            width="30"
-          />
-        </div>
+  <title>Playlists</title>
+
+</head>
+
+<body>
+  <!-- Tela de ínicio -->
+  <main>
+    <nav>
+      <img src="./Assets/Images/equalize.png" width="30" alt="" />
+    </nav>
+    <video autoplay muted loop id="myVideo">
+      <source src="./Assets/Videos/manchild.webm" type="video/mp4" />
+    </video>
+
+    <div class="text-main">
+      <h1>Playlists</h1>
+      <p>My spotify page, follow me on Github :)</p>
+      <div class="links">
+        <a href="https://github.com/iampaylin" class="github" target="_blank"><img src="./Assets/Images/github-30.png"
+            width="30" alt="" /></a>
       </div>
-      <div class="image-main" id="image-main">
-        <div class="gradient"></div>
+      <div class="songday">
+        <img src="./Assets/Images/manchild.jfif" width="60" class="coversongday" alt="">
+        <p>
+          Manchild <br />
+          Sabrina Carpenter
+        </p>
+        <img src="./Assets/Images/musicoff.png" alt="" id="muteButton" onclick="toggleMute()" width="30" />
       </div>
+    </div>
+    <div class="image-main" id="image-main">
+      <div class="gradient"></div>
+    </div>
 
-      <a
-        href="https://open.spotify.com/user/4gvin36hbuyictiwzrvnis9b1?si=c0de636f24854beb"
-        class="spotify-link"
-        target="_blank"
-      >
-        <img src="./Assets/Images/spotify-30.png" alt="Spotify" />
-      </a>
-    </main>
-    <!-- 
-    <section class="playlists">
-      <a
-        href="https://open.spotify.com/playlist/1TuISr8AFSmAgQPz4a9k89?si=efa8b7cc73594424"
-        target="_blank"
-        class="playlist pop"
-      >
-        <div class="cover">
-          <p>POP</p>
-        </div>
-      </a>
+    <a href="https://open.spotify.com/user/4gvin36hbuyictiwzrvnis9b1?si=c0de636f24854beb" class="spotify-link"
+      target="_blank">
+      <img src="./Assets/Images/spotify-30.png" alt="Spotify" />
+    </a>
+  </main>
+  <script src="./Assets/JS/index.js"></script>
+</body>
 
-      <a
-        href="https://open.spotify.com/playlist/3fbZEySpEL2tjEvc2sbEIm?si=638d2e7d37d6476c"
-        target="_blank"
-        class="playlist nostalgia"
-      >
-        <div class="cover">
-          <p>
-            Nostalgia <br />
-            1980 - 2010
-          </p>
-        </div>
-      </a>
-
-      <a
-        href="https://open.spotify.com/playlist/3zuB9LmdNVzLzCPsoGSxiA?si=0799f6a24f5d42a7"
-        target="_blank"
-        class="playlist showtime"
-      >
-        <div class="cover">
-          <p>Showtime</p>
-        </div>
-      </a>
-    </section>
-    -->
-    <script src="./Assets/JS/index.js"></script>
-  </body>
 </html>
