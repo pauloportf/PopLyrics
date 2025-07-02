@@ -1,8 +1,9 @@
-# Playlists
+# Pop Lirycs Brasil
 
-A website with my playlists on Spotify.
+Instagram: @poplyrics_brasil
 
 <img src="./Assets/Images/banner/playlistsbanner.png">
 
 ## Link
-https://iampaylin.github.io/Playlists/
+
+http://poplyrics.vercel.app
