@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pop Lirycs Brasil - Letras de músicas" />
+  <meta property="og:description" content="Página oficial @poplirycs_brasil no instagram" />
+  <meta property="og:url" content="http://poplyrics.vercel.app" />
 
-  <link rel="shortcut icon" href="./Assets/Images/equalize.png" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="./Assets/Images/PopLirycsIcon.png">
 
   <link rel="stylesheet" href="./Assets/CSS/style.css" />
 
@@ -15,45 +19,73 @@
   <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
-  <title>Playlists</title>
+  <title>Pop Lirycs Brasil - Letras de músicas</title>
+
 
 </head>
 
 <body>
-  <!-- Tela de ínicio -->
   <main>
+
+    <!-- Navegação sem muitas informações - Apenas logo -->
     <nav>
-      <img src="./Assets/Images/equalize.png" width="30" alt="" />
+      <img src="./Assets/Images/P.png" width="30" alt="" />
     </nav>
+    <!-- Final da navegação -->
+
+    <!-- Video selecionado -->
     <video autoplay muted loop id="myVideo">
-      <source src="./Assets/Videos/manchild.webm" type="video/mp4" />
+      <source src="./Assets/Videos/manchild.webm" id="videoSource" type="video/mp4" />
     </video>
+    <!-- Final do video selecionado -->
 
     <div class="text-main">
-      <h1>Playlists</h1>
-      <p>My spotify page, follow me on Github :)</p>
+      <h1>Pop Lirycs</h1>
+      <p>Página oficial @poplirycs_brasil | Me siga no spotify :)</p>
+
+      <!-- Links para o Spotify e Github-->
       <div class="links">
-        <a href="https://github.com/iampaylin" class="github" target="_blank"><img src="./Assets/Images/github-30.png"
+        <a href="https://open.spotify.com/user/4gvin36hbuyictiwzrvnis9b1?si=d61d8e311b5143d2" class="spotify"
+          target="_blank"><img src="./Assets/Images/Spotify.png" width="30" alt="" /></a>
+
+        <a href="https://github.com/pauloportf/" class="github" target="_blank"><img src="./Assets/Images/Github.png"
             width="30" alt="" /></a>
       </div>
+      <!-- Fim dos links -->
+
+      <!-- Informações da música selecionada -->
       <div class="songday">
-        <img src="./Assets/Images/manchild.jfif" width="60" class="coversongday" alt="">
-        <p>
+        <img src="./Assets/Images/songs/manchild.jfif" width="60" class="coversongday" id="coverart" alt="">
+        <p id="musicinfo">
           Manchild <br />
           Sabrina Carpenter
         </p>
         <img src="./Assets/Images/musicoff.png" alt="" id="muteButton" onclick="toggleMute()" width="30" />
       </div>
+      <!-- Final das informações da música selecionada -->
     </div>
+
+    <!-- Página com gradiente-->
     <div class="image-main" id="image-main">
       <div class="gradient"></div>
     </div>
-
-    <a href="https://open.spotify.com/user/4gvin36hbuyictiwzrvnis9b1?si=c0de636f24854beb" class="spotify-link"
-      target="_blank">
-      <img src="./Assets/Images/spotify-30.png" alt="Spotify" />
-    </a>
+    <!-- Fim da página com gradiente-->
   </main>
+
+  <section class="songs">
+    <h2>Músicas</h2>
+    <div class="listsongs">
+      <!-- Manchild - Sabrina Carpenter -->
+      <div class="song manchild" onclick="manchild()">
+        <p>Manchild <br> Sabrina Carpenter</p>
+      </div>
+      <!-- Clocks - Coldplay -->
+      <div class="song clocks" onclick="clocks()">
+        <p>Clocks <br> Coldplay</p>
+      </div>
+    </div>
+  </section>
+
   <script src="./Assets/JS/index.js"></script>
 </body>
 
