@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Pop Lirycs Brasil - Letras de músicas" />
-  <meta property="og:description" content="Página oficial @poplirycs_brasil no instagram" />
+  <meta property="og:description"
+    content="Página oficial @poplirycs_brasil no instagram, pop lyrics, letras de música" />
   <meta property="og:url" content="http://poplyrics.vercel.app" />
-  <meta name="google-site-verification" content="BMVqf8UQjzSzZWli1eNRXMJADW98R42RK4Y4VoC5IJ4" />
 
   <link rel="shortcut icon" type="image/x-icon" href="./Assets/Images/PopLirycsIcon.png">
 
@@ -30,7 +30,7 @@
 
     <!-- Navegação sem muitas informações - Apenas logo -->
     <nav>
-      <img src="./Assets/Images/P.png" width="30" alt="" />
+      <img src="./Assets/Images/Icon.svg" width="20" alt="" />
     </nav>
     <!-- Final da navegação -->
 
@@ -40,17 +40,17 @@
     </video>
     <!-- Final do video selecionado -->
 
-    <div class="text-main">
+    <div class="text-main" id="text-main">
       <h1>Pop Lyrics</h1>
-      <p>Página oficial @poplyrics_brasil | Me siga no spotify :)</p>
+      <p>@poplyrics_brasil no Instagram<br> Me siga no spotify :)</p>
 
       <!-- Links para o Spotify e Github-->
       <div class="links">
         <a href="https://open.spotify.com/user/4gvin36hbuyictiwzrvnis9b1?si=d61d8e311b5143d2" class="spotify"
-          target="_blank"><img src="./Assets/Images/Spotify.png" width="30" alt="" /></a>
+          target="_blank"><img src="./Assets/Images/Spotify.svg" width="30" alt="Link para o Spotify" /></a>
 
-        <a href="https://github.com/pauloportf/" class="github" target="_blank"><img src="./Assets/Images/Github.png"
-            width="30" alt="" /></a>
+        <a href="https://www.instagram.com/poplyrics_brasil/" class="instagram" target="_blank"><img
+            src="./Assets/Images/Instagram.svg" width="30" alt="Link para o Instagram" /></a>
       </div>
       <!-- Fim dos links -->
 
@@ -68,7 +68,7 @@
 
     <!-- Página com gradiente-->
     <div class="image-main" id="image-main">
-      <div class="gradient"></div>
+      <div class="gradient" onclick="notVisibleText()"></div>
     </div>
     <!-- Fim da página com gradiente-->
   </main>
@@ -78,7 +78,7 @@
     <div class="listsongs">
       <!-- Manchild - Sabrina Carpenter -->
       <div class="song manchild" onclick="manchild()">
-        <p>Manchild <br> Sabrina Carpenter</p>
+        <p>Manchild <br> Sabrina Carp...</p>
       </div>
       <!-- Clocks - Coldplay -->
       <div class="song clocks" onclick="clocks()">

@@ -5,7 +5,7 @@ function toggleMute() {
   if (video.muted) {
     video.muted = false;
     muteButton.src = "./Assets/Images/musicon.png"; // Altere para o ícone de desmutado
-    muteButton.style.transition = "0.5s ease";
+    muteButton.style.transition = "350ms ease";
   } else {
     video.muted = true;
     muteButton.src = "./Assets/Images/musicoff.png"; // Altere para o ícone de mutado
@@ -34,6 +34,9 @@ function manchild() {
   } else {
     cover.src = './Assets/Images/songs/manchild.jfif';
   }
+
+  // 🔊 Define volume inicial
+  video.volume = 0.3; // entre 0.0 e 1.0
 }
 
 function clocks() {
@@ -57,6 +60,9 @@ function clocks() {
   } else {
     cover.src = './Assets/Images/songs/clocks.jfif';
   }
+
+  // 🔊 Define volume inicial
+  video.volume = 0.3; // entre 0.0 e 1.0
 
   cover.load();
 }
